@@ -48,10 +48,10 @@ puts "Please enter a command:"
 response = gets.chomp
 
   if response != "exit"
-    loop do puts "Please enter a command:"
-    break if response == "exit"
+    puts "Please enter a command:"
+  else
     exit_jukebox
-    end
+    # end
   end
 
     if response == "help"
