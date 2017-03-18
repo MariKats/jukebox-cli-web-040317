@@ -42,23 +42,23 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-# def run(songs)
-# help
-# puts "Please enter a command:"
-# response = gets.chomp
-#
-#   if response != "exit"
-#     loop do puts "Please enter a command:"
-#     break if response == "exit"
-#     exit_jukebox
-#     end
-#   end
-#
-#     if response == "help"
-#       help
-#     elsif response == "list"
-#       list(songs)
-#     elsif response == "play"
-#       play(songs)
-#    end
-# end
+def run(songs)
+help
+puts "Please enter a command:"
+response = gets.chomp
+
+  if response != "exit"
+    loop do puts "Please enter a command:"
+    break if response == "exit"
+    exit_jukebox
+    end
+  end
+
+    if response == "help"
+      help
+    elsif response == "list"
+      list(songs)
+    elsif response == "play"
+      play(songs)
+   end
+end
